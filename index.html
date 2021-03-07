@@ -23,9 +23,9 @@
             <div class="col-12">
                 <strong id="limit">Rate limit: {remaining}/{total}</strong>
                 <br>
-                <strong id="repos">Repo count: {repos}</strong>
+                <strong id="repos">Public repo count: 0</strong>
                 <br />
-                <strong id="stars">Stars count: {stars}</strong>
+                <strong id="stars">Stars count: 0</strong>
                 <br />
                 <!-- <strong id="watchers">Watchers count: {watchers}</strong>
                 <br />
@@ -45,11 +45,11 @@
                     <label class="form-check-label" for="forked">Include forks</label>
                 </div>
             </div>
-            <button id="analyze" class="mt-2 btn btn-primary">Analyze</button>
+            <button id="analyze" class="mt-3 btn btn-primary">Analyze</button>
         </div>
-        <div class="row mt-2">
+        <div class="row">
             <div class="col-12">
-                <canvas class="d-none" id="chart" width="300" height="300"></canvas>
+                <canvas class="d-none mt-2" id="chart" width="350" height="350"></canvas>
             </div>
         </div>
     </div>
