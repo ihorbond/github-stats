@@ -1,0 +1,20 @@
+{
+    "name": "Github Stats",
+    "description": "See github user's stats",
+    "version": "1.0",
+    "manifest_version": 3,
+    "author": "Ihor B.",
+    "homepage_url": "https://github.com/ihorbond/github-stats",
+    "permissions": [
+        "storage"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "Github stats"
+    },
+    "offline_enabled": false
+    
+  }

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Github Stats</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container main">
+        <div class="row header">
+            <div class="p-2 col-sm-12 text-center">
+                <h3>Github User Stats</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <strong id="limit">Rate limit: {remaining}/{total}</strong>
+                <br>
+                <strong id="repos">Repo count: {repos}</strong>
+                <br />
+                <strong id="stars">Stars count: {stars}</strong>
+                <br />
+                <!-- <strong id="watchers">Watchers count: {watchers}</strong>
+                <br />
+                <strong id="forks">Forks count: {forks}</strong>
+                <br /> -->
+                <label for="token" class="form-label">Your Github OAuth token (to increase <a target="_blank" href="https://docs.github.com/en/rest/overview/resources-in-the-rest-api#rate-limiting">rate limit</a>)</label>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon3">Token</span>
+                    <input type="text" class="form-control" id="token" aria-describedby="basic-addon3">
+                </div>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="owner">
+                    <label class="form-check-label" for="owner">Owner</label>
+                </div>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="forked">
+                    <label class="form-check-label" for="forked">Include forks</label>
+                </div>
+            </div>
+            <button id="analyze" class="mt-2 btn btn-primary">Analyze</button>
+        </div>
+        <div class="row mt-2">
+            <div class="col-12">
+                <canvas class="d-none" id="chart" width="300" height="300"></canvas>
+            </div>
+        </div>
+    </div>
+    <br>
+    </div>
+    <!-- <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script> -->
+    <script src="js/index.js"></script>
+    <script src="js/Chart.min.js"></script>
+</body>
